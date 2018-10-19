@@ -21,4 +21,6 @@ document.getElementById("form").onclick = function() {
     var duration = (end - start) / 1000;
     
     document.getElementById("time").innerHTML = duration + "s";
+    
+    setTimeout(makeFormAppear, Math.random() * 2000);
 }

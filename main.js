@@ -8,6 +8,10 @@ function makeFormAppear(){
     
 }
 
+setTimeout(makeFormAppear, Math.random() * 2000);
+
+
+
 document.getElementById("form").onclick = function() {
     
     document.getElementById("form").style.display = "none";

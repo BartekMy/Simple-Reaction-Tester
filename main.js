@@ -8,8 +8,13 @@ function makeFormAppear(){
     
 }
 
-setTimeout(makeFormAppear, Math.random() * 2000);
+function appearAfterDelay(){
+    
+    setTimeout(makeFormAppear, Math.random() * 2000);
+    
+}
 
+appearAfterDelay();
 
 
 document.getElementById("form").onclick = function() {
@@ -22,5 +27,5 @@ document.getElementById("form").onclick = function() {
     
     document.getElementById("time").innerHTML = duration + "s";
     
-    setTimeout(makeFormAppear, Math.random() * 2000);
+    appearAfterDelay();
 }

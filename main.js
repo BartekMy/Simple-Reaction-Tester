@@ -2,6 +2,14 @@ var start = new Date().getTime();
 
 function makeFormAppear(){
     
+    var top = Math.random() * 400;
+    
+    var left = Math.random() * 400;
+    
+    document.getElementById("form").style.top = top + "px";
+    
+    document.getElementById("form").style.left = left + "px";
+    
     document.getElementById("form").style.display = "block";
     
     start = new Date().getTime();

@@ -6,9 +6,15 @@ function makeFormAppear(){
     
     var left = Math.random() * 400;
     
+    var size = Math.random() * 200;
+    
     document.getElementById("form").style.top = top + "px";
     
     document.getElementById("form").style.left = left + "px";
+    
+    document.getElementById("form").style.width = size + "px";
+    
+    document.getElementById("form").style.height = size + "px";
     
     document.getElementById("form").style.display = "block";
     

@@ -17,6 +17,16 @@ function makeFormAppear(){
     
     var size = Math.random() * 200;
     
+    if(Math.random() >= 0.5){
+        
+        document.getElementById("form").style.borderRadius = "50%";
+        
+    } else {
+        
+        document.getElementById("form").style.borderRadius = "0";
+        
+    }
+    
     document.getElementById("form").style.backgroundColor = getRandomColor();
     
     document.getElementById("form").style.top = top + "px";

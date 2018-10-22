@@ -15,7 +15,7 @@ function makeFormAppear(){
     
     var left = Math.random() * 400;
     
-    var size = Math.random() * 200;
+    var size = (Math.random() * 100) + 100;
     
     if(Math.random() >= 0.5){
         

@@ -1,3 +1,16 @@
+body {
+    
+    font-family: sans-serif;
+    
+}
+
+.bold {
+    
+    font-weight: bold;
+    
+}
+
+
 #form {
     height: 200px;
     width: 200px;

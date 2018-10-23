@@ -60,7 +60,7 @@ document.getElementById("form").onclick = function() {
     
     var duration = (end - start) / 1000;
     
-    document.getElementById("time").innerHTML = duration + "s";
+    document.getElementById("time").innerHTML = duration;
     
     appearAfterDelay();
 }

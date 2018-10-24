@@ -52,15 +52,26 @@ function appearAfterDelay(){
 appearAfterDelay();
 
 
+var bestTime = Number.POSITIVE_INFINITY;
+
+var lastTime;
+
 document.getElementById("form").onclick = function() {
     
     document.getElementById("form").style.display = "none";
     
     var end = new Date().getTime();
     
-    var duration = (end - start) / 1000;
-    
-    document.getElementById("time").innerHTML = duration;
+    lastTime = (end - start) / 1000;
+
+                
+    if(bestTime > lastTime) {
+        bestTime = lastTime;
+    }
+
+    document.getElementById("time").innerHTML = lastTime + " sec."  ;
+
+    document.getElementById("best").innerHTML = bestTime + " sec.";
     
     appearAfterDelay();
 }
